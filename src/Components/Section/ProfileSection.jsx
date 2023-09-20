@@ -20,12 +20,11 @@ function ProfileSection() {
         <h1 className="title">Wasikur Rahman Khan</h1>
         <p className="section__text__p2">Frontend and Python developer</p>
         <div className="btn-container">
-          <button
-            className="btn btn-color-2"
-            // onClick={window.open("./assets/Was")}
-          >
+          <button className="btn btn-color-2">
             <a
-              href={"./assets/Wasikur_resume.pdf"}
+              href="https://drive.google.com/file/d/1e2amJHu_Z59ZZ8nArW6gvneY7e77rghT/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               download="Wasikur_Rahman_Khan_CV.pdf"
             >
               Download CV
@@ -40,4 +39,5 @@ function ProfileSection() {
     </section>
   );
 }
+
 export default ProfileSection;
