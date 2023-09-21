@@ -1,4 +1,5 @@
 import React from "react";
+import "./sectionmediaqueries.css";
 import Arrow from "../assets/arrow.png";
 import ExperienceCard from "./ExperienceTile/CardDetails/ExperienceCard";
 import {
@@ -12,33 +13,13 @@ function ExperienceSection() {
     window.location.href = "./#projects";
   };
 
-  function createCard(frontend) {
+  function createCard(tech) {
     return (
       <ExperienceCard
-        id={frontend.id}
-        key={frontend.id}
-        skill={frontend.skill}
-        experience={backend.experience}
-      />
-    );
-  }
-  function createCard(backend) {
-    return (
-      <ExperienceCard
-        id={backend.id}
-        key={backend.id}
-        skill={backend.skill}
-        experience={backend.experience}
-      />
-    );
-  }
-  function createCard(python) {
-    return (
-      <ExperienceCard
-        id={python.id}
-        key={python.id}
-        skill={python.skill}
-        experience={python.experience}
+        id={tech.id}
+        key={tech.id}
+        skill={tech.skill}
+        experience={tech.experience}
       />
     );
   }
