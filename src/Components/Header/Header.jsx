@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import "../Header/header.css";
-import MenuLinks from "../NavBars/NavLinks/MenuLinks";
 import NavLinks from "../NavBars/NavLinks/NavLinks";
+import HamburgerNav from "../NavBars/NavLinks/HamburgerNav";
 import portfolio from "../assets/portfolio_logo.gif";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
@@ -26,16 +26,7 @@ function Header() {
     }
     document.body.className = theme;
   }, [theme]);
-  // Hamburger Menu Handling
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
   return (
     <>
       <nav id="desktop-nav">
@@ -53,18 +44,7 @@ function Header() {
           )}
         </button>
       </nav>
-
-      <nav id="hamburger-nav">
-        <div className="logo">Wasikur Rahman Khan</div>
-        <div className={`hamburger-menu${isMenuOpen ? "-open" : ""}`}>
-          <div className="hamburger-icon" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <MenuLinks onClick={closeMenu} />
-        </div>
-      </nav>
+      <HamburgerNav />
     </>
   );
 }
