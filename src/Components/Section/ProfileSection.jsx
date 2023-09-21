@@ -1,6 +1,7 @@
 import React from "react";
 import profile_pic from "../assets/profile_pic.png";
 import SocialsContainer from "../SocialsContainer/SocialsContainer";
+import "./sectionmediaqueries.css";
 
 function ProfileSection() {
   const navigateToContact = () => {

@@ -1,4 +1,5 @@
 import React from "react";
+import "./socialmediaqueries.css";
 
 function SocialsContainer() {
   return (

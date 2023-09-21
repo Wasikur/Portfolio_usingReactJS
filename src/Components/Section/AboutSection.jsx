@@ -1,4 +1,5 @@
 import React from "react";
+import "./sectionmediaqueries.css";
 import "./AboutTile/about.css";
 import about_me2 from "../assets/about-me2.jpg";
 import AboutCard from "./AboutTile/AboutCard";

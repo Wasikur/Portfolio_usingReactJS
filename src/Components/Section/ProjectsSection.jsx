@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectsTile/ProjectCard"; // Importing the Card component
 import projects from "./ProjectsTile/projectCardDeatils"; // Importing project data
 import arrow from "../assets/arrow.png"; // Importing an image
+import "./sectionmediaqueries.css";
 
 function ProjectsSection() {
   const navigateToContact = () => {

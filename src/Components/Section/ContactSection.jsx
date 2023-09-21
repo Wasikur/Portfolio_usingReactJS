@@ -1,4 +1,5 @@
 import React from "react";
+import "./sectionmediaqueries.css";
 
 function ContactSection() {
   return (

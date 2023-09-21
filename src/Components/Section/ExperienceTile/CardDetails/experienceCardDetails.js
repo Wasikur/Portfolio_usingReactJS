@@ -10,7 +10,7 @@ const frontend = [
     experience: "Experienced",
   },
   {
-    id: 1,
+    id: 3,
     skill: "Javascript",
     experience: "Intermediate",
   },
